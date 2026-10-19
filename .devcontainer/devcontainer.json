@@ -1,0 +1,29 @@
+
+{
+  "name": "SupportHub Agentic Engineering Workshop",
+  "image": "mcr.microsoft.com/dotnet/sdk:10.0",
+  "features": {
+    "ghcr.io/microsoft/aspire-devcontainer-feature/aspire:2": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.csdevkit",
+        "microsoft-aspire.aspire-vscode",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ise-hve-essentials.hve-core",
+        "github.vscode-pull-request-github",
+        "github.vscode-github-actions",
+        "ms-azuretools.vscode-containers"
+      ]
+    }
+  },
+  "postCreateCommand": "bash -lc 'set -e; npm install --global @github/copilot; gh extension install github/gh-stack; copilot plugin marketplace add microsoft/hve-core; copilot plugin install hve-core@hve-core'"
+}

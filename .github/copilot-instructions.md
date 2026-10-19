@@ -206,7 +206,7 @@ Aspire is the default mechanism for composing, running, observing, testing, and 
 - Prefer official Aspire integrations when introducing infrastructure.
 - Preserve health checks and OpenTelemetry instrumentation.
 - Use Aspire service discovery instead of fixed local URLs.
-- Use `*.dev.localhost` endpoints where appropriate.
+- Use plain `localhost` endpoints, not `*.dev.localhost`, because the dev container tunnel cannot resolve `*.dev.localhost`.
 - Verify distributed changes through the running Aspire application rather than relying only on isolated builds or source-code inspection.
 - Treat resource health, logs, traces, and runtime state as engineering feedback.
 
