@@ -1,6 +1,6 @@
 
 {
-  "name": "SupportHub Agentic Engineering Workshop",
+  "name": "Agentic Engineering Workshop",
   "image": "mcr.microsoft.com/dotnet/sdk:10.0",
   "features": {
     "ghcr.io/microsoft/aspire-devcontainer-feature/aspire:2": {},
